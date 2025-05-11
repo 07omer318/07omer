@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <title>Ana Sayfa - Seyahat Acentesi</title>
     <link rel="stylesheet" href="styles/style.css"> <!-- CSS dosyasını bağlıyoruz -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive tasarım için -->
+    <title>Destek Talebi</title>
 </head>
 <body>
-
-<header>
-    <h1>Seyahat Acentesi</h1>
-</header>
-
-<nav>
-    <!-- Navbar: Tüm sayfalara buradan erişim sağlanacak -->
+    <nav>
+    <!-- Navbar: Tüm sayfalara erişim sağlanacak -->
     <ul>
         <li><a href="index.html">Ana Sayfa</a></li>
         <li><a href="about.html">Hakkımızda</a></li>
@@ -26,20 +21,22 @@
         <li><a href="support.html">Destek</a></li>
         <li><a href="gallery.html">Galeri</a></li>
         <li><a href="message.html">mesaj</a></li>
-        
     </ul>
 </nav>
 
-<main>
-    <h2>Hoş Geldiniz!</h2>
-    <p>Hayalinizdeki tatile bizimle çıkın. Uygun fiyatlı ve unutulmaz seyahat deneyimleri sunuyoruz.</p>
-</main>
+<h1>Destek Talebi Formu</h1>
+
+<form id="supportForm">
+    <input type="text" id="sup_name" placeholder="Ad Soyad" required>
+    <input type="email" id="sup_email" placeholder="Email" required>
+    <textarea id="sup_message" placeholder="Mesaj" required></textarea>
+    <button type="submit">Gönder</button>
+</form>
+<script src="scripts/myscript.js"></script>
 
 <footer>
-    <p>&copy; 2025 Seyahat Acentesi | Tüm Hakları Saklıdır.</p>
+    <p>&copy; 2025 Seyahat Acentesi | Tüm Hakları Saklıdır.</p> <!-- Footer -->
 </footer>
-
-<script src="scripts/myscript.js"></script> <!-- JS dosyasını bağlıyoruz -->
-
+<script src="scripts/myscript.js"></script>
 </body>
 </html>
